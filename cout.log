@@ -1,0 +1,318 @@
+You will be given a number of s = 100 salesmen offering their products. You have a bag with a capacity C, where 1 <= C <= 10 ** 5
+For every product bench you will have the below values:
+	1. The number of products N, using 1-based indexing (1, 2, ..., N), where 1 <= N <= 100
+	2. The capacity C
+	3. Every product i will have 2 values, a weight w_i, and a value v_i, where 1 <= w_i <= C, and 1 <= v_i <= 10 ** 10 
+Find the maximum value of products you can fit in your bag.
+
+You will receive N and C, then after that the product values w_i and v_i.
+Example Input:
+	4 14
+	6 3
+	7 9
+	5 4
+	2 1
+
+Example Output:
+	14
+
+Current test: 0
+Max possible value: 14
+
+Current test: 1
+Max possible value: 18
+
+Current test: 2
+Max possible value: 10
+
+Current test: 3
+Max possible value: 14
+
+Current test: 4
+Max possible value: 17
+
+Current test: 5
+Max possible value: 12
+
+Current test: 6
+Max possible value: 376
+
+Current test: 7
+Max possible value: 96
+
+Current test: 8
+Max possible value: 261
+
+Current test: 9
+Max possible value: 205
+
+Current test: 10
+Max possible value: 83
+
+Current test: 11
+Max possible value: 90
+
+Current test: 12
+Max possible value: 179
+
+Current test: 13
+Max possible value: 313
+
+Current test: 14
+Max possible value: 227
+
+Current test: 15
+Max possible value: 96
+
+Current test: 16
+Max possible value: 150
+
+Current test: 17
+Max possible value: 239
+
+Current test: 18
+Max possible value: 69
+
+Current test: 19
+Max possible value: 239
+
+Current test: 20
+Max possible value: 283
+
+Current test: 21
+Max possible value: 15687
+
+Current test: 22
+Max possible value: 49032
+
+Current test: 23
+Max possible value: 19145
+
+Current test: 24
+Max possible value: 33370
+
+Current test: 25
+Max possible value: 31500
+
+Current test: 26
+Max possible value: 24952
+
+Current test: 27
+Max possible value: 45072
+
+Current test: 28
+Max possible value: 39071
+
+Current test: 29
+Max possible value: 36513
+
+Current test: 30
+Max possible value: 35560
+
+Current test: 31
+Max possible value: 27072
+
+Current test: 32
+Max possible value: 27946
+
+Current test: 33
+Max possible value: 29345
+
+Current test: 34
+Max possible value: 26919
+
+Current test: 35
+Max possible value: 10112
+
+Current test: 36
+Max possible value: 31755
+
+Current test: 37
+Max possible value: 45089
+
+Current test: 38
+Max possible value: 60858
+
+Current test: 39
+Max possible value: 27395
+
+Current test: 40
+Max possible value: 34437
+
+Current test: 41
+Max possible value: 4171432
+
+Current test: 42
+Max possible value: 6476913
+
+Current test: 43
+Max possible value: 3181007
+
+Current test: 44
+Max possible value: 5445116
+
+Current test: 45
+Max possible value: 4197081
+
+Current test: 46
+Max possible value: 4551702
+
+Current test: 47
+Max possible value: 4316334
+
+Current test: 48
+Max possible value: 2057590
+
+Current test: 49
+Max possible value: 5398551
+
+Current test: 50
+Max possible value: 1904421
+
+Current test: 51
+Max possible value: 3658552
+
+Current test: 52
+Max possible value: 1573202
+
+Current test: 53
+Max possible value: 5420787
+
+Current test: 54
+Max possible value: 1076517
+
+Current test: 55
+Max possible value: 6511349
+
+Current test: 56
+Max possible value: 8255583
+
+Current test: 57
+Max possible value: 4569435
+
+Current test: 58
+Max possible value: 5306598
+
+Current test: 59
+Max possible value: 626803
+
+Current test: 60
+Max possible value: 5813572
+
+Current test: 61
+Max possible value: 261422310
+
+Current test: 62
+Max possible value: 210972563
+
+Current test: 63
+Max possible value: 696283268
+
+Current test: 64
+Max possible value: 672651375
+
+Current test: 65
+Max possible value: 557822804
+
+Current test: 66
+Max possible value: 176174066
+
+Current test: 67
+Max possible value: 333273820
+
+Current test: 68
+Max possible value: 395597023
+
+Current test: 69
+Max possible value: 721116495
+
+Current test: 70
+Max possible value: 213101965
+
+Current test: 71
+Max possible value: 592608731
+
+Current test: 72
+Max possible value: 747160536
+
+Current test: 73
+Max possible value: 498621169
+
+Current test: 74
+Max possible value: 184665634
+
+Current test: 75
+Max possible value: 568752751
+
+Current test: 76
+Max possible value: 743553557
+
+Current test: 77
+Max possible value: 625594858
+
+Current test: 78
+Max possible value: 474184833
+
+Current test: 79
+Max possible value: 529728584
+
+Current test: 80
+Max possible value: 269523554
+
+Current test: 81
+Max possible value: 86157669729
+
+Current test: 82
+Max possible value: 40357628263
+
+Current test: 83
+Max possible value: 65946590813
+
+Current test: 84
+Max possible value: 71968881896
+
+Current test: 85
+Max possible value: 62149081328
+
+Current test: 86
+Max possible value: 48900304552
+
+Current test: 87
+Max possible value: 26753853102
+
+Current test: 88
+Max possible value: 31512115823
+
+Current test: 89
+Max possible value: 57228234857
+
+Current test: 90
+Max possible value: 87254369534
+
+Current test: 91
+Max possible value: 46788582757
+
+Current test: 92
+Max possible value: 65291095753
+
+Current test: 93
+Max possible value: 14840959946
+
+Current test: 94
+Max possible value: 45644752953
+
+Current test: 95
+Max possible value: 63726039624
+
+Current test: 96
+Max possible value: 48957337490
+
+Current test: 97
+Max possible value: 12228184208
+
+Current test: 98
+Max possible value: 75105550743
+
+Current test: 99
+Max possible value: 30455991298
+You filled your bag with amazing weapons, your adventure will be a piece of cake now. Here is your reward: HTB{1f_Y0U_7H0u9h7_KN4P54CK_W45_jU57_4_CRYp70_PR0bl3m_ch3Ck_4g41N_878b24232f843134fcc5520713961f0a}
